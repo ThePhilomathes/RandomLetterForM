@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Random Letter - Zean</title>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+    <!-- Load YouTube API first -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+
+<body>
+
+
+<div class="animated-background">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
+</div>
+<audio id="backgroundMusic" loop preload="auto">
+    <source src="lauv.MP3" type="audio/mpeg">
+    Your browser does not support audio.
+</audio>
+
+<div class="floating-hearts">
+    <span>♡</span>
+    <span>♥</span>
+    <span>♡</span>
+    <span>♥</span>
+    <span>♡</span>
+    <span>♥</span>
+    <span>♡</span>
+    <span>♥</span>
+</div>
+
+<div id="startScreen">
+    <button class="start-button" onclick="startSlideshow()">
+        Start 💗
+    </button>
+</div>
+
+    <!-- Slide Container -->
+    <div class="slide-container">
+
+        <div class="slide-wrapper">
+
+            <div class="slide active">
+                <span class="icon">✨</span>
+                <h1>Short Notes</h1>
+                <p>To start off, please don't think of me as someone reaching out related to work.</p>
+            </div>
+
+            <div class="slide">
+                <span class="icon">✨</span>
+                <h1>Short Notes</h1>
+                <p>Alam ko na madalas pa ako nagkaka-mali sayo, but I'll do better.</p>
+            </div>
+
+            <div class="slide">
+                <span class="icon">☀️</span>
+                <h1>Your Presence</h1>
+                <p>I know you have your own time, and I respect that. There are times na I want to talk kaso baka magka-mali nanaman ako sa sasabihin ko.</p>
+            </div>
+
+            <div class="slide">
+                <span class="icon">🧠</span>
+                <h1>Our Conversations</h1>
+                <p>I don't know the whys pero gaya ng sabi ko. Kada nakakausap kita ay tumatahimik ang mundo.</p>
+            </div>
+
+            <div class="slide">
+                <span class="icon">💙</span>
+                <h1>Your Character</h1>
+                <p>Your kindness, sincerity, and understanding mean more to me than words can say. You inspire me simply by being who you are --- na kahit minsan parang makikipag-away sumagot.</p>
+            </div>
+
+            <div class="slide">
+                <span class="icon">💙</span>
+                <h1>Your Take</h1>
+                <p>No worries, tanda ko pa sinabi mo sakin last time, and I respect it. I just want to express my end, in my way.</p>
+            </div>
+
+            <div class="slide">
+                <span class="icon">😊</span>
+                <h1>Thanks for being you</h1>
+                <p>That is all I wanted to say for now. Tap the heart below to send a little love, or start over anytime!</p>
+
+                <button class="heart-action-btn" id="burstHeart" onclick="burstConfetti(event)">
+                    ❤️
+                </button>
+            </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="nav-buttons">
+            <button id="prevBtn" class="nav-btn" onclick="changeSlide(-1)" disabled>
+                Previous
+            </button>
+
+            <button id="nextBtn" class="nav-btn" onclick="changeSlide(1)">
+                Next
+            </button>
+        </div>
+
+        <!-- Progress Dots -->
+        <div class="progress-dots">
+            <div class="dot active"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+        </div>
+
+    </div>
+
+
+
+</body>
+
+    <!-- Load your JavaScript last -->
+    <script src="main.js"></script>
+</html>
